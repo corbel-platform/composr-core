@@ -142,7 +142,7 @@ function buildSandbox (sb, options, urlBase, domain, requirer, reqWrapper, resWr
   sb.require = options.browser ? requirer.forDomain(domain, version, true) : requirer.forDomain(domain, version)
 
   sb.config = {}
-
+  
   sb.config.urlBase = urlBase
 
   sb.metrics = new MetricsFirer(domain)

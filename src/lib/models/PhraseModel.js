@@ -160,8 +160,14 @@ PhraseModel.prototype.__executeFunctionMode = function (verb, parameters, timeou
       parameters.domain,
       parameters.require,
       parameters.config,
+<<<<<<< HEAD
+      parameters.metrics,
+      parameters.userId
+    );
+=======
       parameters.metrics
     )
+>>>>>>> github/master
   } else {
     this.compiled.codes[verb].fn.apply(null, [parameters.req,
       parameters.res,
@@ -170,8 +176,14 @@ PhraseModel.prototype.__executeFunctionMode = function (verb, parameters, timeou
       parameters.domain,
       parameters.require,
       parameters.config,
+<<<<<<< HEAD
+      parameters.metrics,
+      parameters.userId
+    ]);
+=======
       parameters.metrics
     ])
+>>>>>>> github/master
   }
 }
 
